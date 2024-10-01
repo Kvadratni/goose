@@ -123,7 +123,8 @@ Small model for fast, lightweight tasks. Example: `gpt-4o-mini`. You should choo
 Rules designed to control or manage the output of the model. Moderators that currently are supported by `goose`:
 
 - `passive`: does not actively intervene in every response
-- `truncate`: truncates the first contexts when the contexts exceed the max token size
+- `truncate`: truncates the first contexts when the context exceeds the max token size
+- `summarize`: Uses the LLM to summarize the main points of the conversation when context exceeds the max token size
 
 #### toolkits
 
